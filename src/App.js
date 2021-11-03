@@ -36,7 +36,7 @@ const App = () => {
 
     setPosts(
       posts.map((obj) => {
-        return obj.id === postId ? { ...obj } : obj;
+        return obj.id === postId ? { ...obj, likes: obj.likes + 1 } : obj;
       })
     );
   };

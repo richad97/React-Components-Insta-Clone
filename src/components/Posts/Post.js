@@ -2,7 +2,6 @@ import React from "react";
 import Comments from "../Comments/Comments";
 import LikeSection from "./LikeSection";
 import PostHeader from "./PostHeader";
-import Posts from "./Posts";
 
 const Post = (props) => {
   // 🔥 Make sure the parent of Post is passing the right props!
@@ -16,7 +15,6 @@ const Post = (props) => {
       </div>
       {/* Is LikeSection getting all the props it needs to work correctly? */}
       <LikeSection
-        postID={post.id}
         numberOfLikes={post.likes}
         likePost={() => likePost(post.id)}
       />
